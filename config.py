@@ -16,6 +16,13 @@ MODELS_DIR = DATA_DIR / "models"
 for dir_path in [DATA_DIR, RAW_DATA_DIR, PROCESSED_DATA_DIR, MODELS_DIR]:
     dir_path.mkdir(exist_ok=True)
 
+# Data Sources
+DATA_SOURCES = {
+    'ufc_stats': 'http://ufcstats.com',
+    'sherdog': 'https://www.sherdog.com',
+    'ufc_official': 'https://www.ufc.com'
+}
+
 # Basic configuration
 SCRAPING_CONFIG = {
     'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
